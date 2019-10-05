@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mx.com.petlove.petlove.MainActivity"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="75dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/logo" />
+
+        <EditText
+            android:id="@+id/txtUser"
+            style="@style/editText_style"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Usuario"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtPass"
+            style="@style/editText_style"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            style="@style/button_style"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="Login"
+            android:textColor="@android:color/background_light"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnRegistro"
+            style="@style/button_style2"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="80dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="Registrarse en Petlove"
+            android:textColor="@android:color/background_light"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
